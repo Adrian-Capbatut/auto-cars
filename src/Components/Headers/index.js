@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from './../../Assets/Images/logo.png'
 import './styles.css'
 
 const index = () => {
@@ -10,7 +11,7 @@ const index = () => {
 					<div class='header'>
 						<div class='logo'>
 							<a href='index.html'>
-								<img class='logo-img' src='/assets/img/logo.png' alt='Logo' />
+								<img class='logo-img' src={logo} alt='Logo' />
 							</a>
 						</div>
 
