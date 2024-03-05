@@ -5,7 +5,6 @@ import './styles.css'
 const index = () => {
 	return (
 		<div>
-			;
 			<header>
 				<div class='container'>
 					<div class='header'>
