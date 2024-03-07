@@ -1,0 +1,41 @@
+.img-compani {
+	margin-top: 40px;
+	height: 229px;
+	width: 100%;
+}
+
+.titlu-firma {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 17px;
+	font-weight: 400;
+	color: #282828;
+}
+
+.titlu-hr {
+	max-width: 40px;
+	color: #b10303;
+	border: 1px solid #b10303;
+	padding: 0;
+	margin: 6px auto;
+}
+
+.content-firma {
+	margin-top: 30px;
+	max-width: 800px;
+	margin: 0 auto;
+	font-size: 13px;
+	color: #282828;
+}
+
+.content-firma p {
+	padding: 10px 50px 15px 40px;
+}
+
+.content-firma__important {
+	color: #ac0303;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	font-weight: bold;
+	font-size: 13px;
+}

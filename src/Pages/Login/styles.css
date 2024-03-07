@@ -1,0 +1,33 @@
+.titlu-user {
+	padding: 26px 0 20px;
+	font-size: 17px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 18px;
+}
+
+.login-info {
+	max-width: 1000px;
+	color: #8a6d3b;
+	background-color: #fcf8e3;
+	padding: 15px;
+	margin: 25px auto;
+	border: 1px solid #faebcc;
+	border-radius: 4px;
+	font-weight: 500;
+	display: flex;
+	flex-direction: column;
+	gap: 2px;
+}
+
+.login-info a {
+	color: #ac0303;
+}
+
+.login-info a:hover {
+	text-decoration: underline;
+}
+
+.login-form input + label {
+	margin-top: 15px;
+}

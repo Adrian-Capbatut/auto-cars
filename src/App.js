@@ -1,10 +1,10 @@
 import './App.css'
-import Header from './Components/Headers/index.js'
+import Layout from './Components/Layouts/Layout.js'
 
 function App() {
 	return (
 		<div className='App'>
-			<Header />
+			<Layout></Layout>
 		</div>
 	)
 }

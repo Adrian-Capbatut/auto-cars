@@ -1,0 +1,79 @@
+.content-rules {
+	max-width: 1000px;
+	margin: 0 auto;
+	padding-top: 20px;
+	color: #282828;
+	font-size: 16px;
+	line-height: 17.6px;
+	text-align: justify;
+}
+
+.title-item {
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 18.7px;
+	text-transform: uppercase;
+	text-align-last: left;
+}
+
+.rules-items hr {
+	max-width: 100%;
+	color: #b10303;
+	border: 1px solid #b10303;
+	padding: 0;
+	margin: 6px auto 0 auto;
+}
+
+.rules-items ol {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+}
+
+.rules-items ol {
+	padding-top: 47px;
+	margin-left: 25px;
+}
+
+.rules-items a {
+	color: #ac0303;
+	font-weight: 700;
+}
+
+.rules-items a:hover {
+	color: #23527c;
+	text-decoration: underline;
+}
+
+.auction-link {
+	padding: 30px 10px 40px;
+	margin-left: 40px;
+}
+
+.rules-ads {
+	font-size: 18px;
+}
+
+.rules-ads a {
+	font-weight: normal;
+}
+
+.rules-ads p {
+	margin: 10px 0 40px 25px;
+	font-size: 15px;
+	line-height: 27px;
+}
+.rules-price {
+	font-size: 15px;
+}
+
+.rules-price p {
+	margin: 20px 0 25px 50px;
+}
+
+.rules-price ul {
+	margin-left: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 6px;
+}
