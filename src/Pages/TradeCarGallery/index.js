@@ -1,4 +1,5 @@
 import React from 'react'
+import masina from './../../Assets/Images/11.jpg'
 import './styles.css'
 
 const index = () => {
@@ -82,11 +83,11 @@ const index = () => {
 				</div>
 
 				<div class='carousel'>
-					<img class='carousel-car' src='/assets/img/11.jpg' alt='Car Image' />
-					<img class='carousel-car' src='/assets/img/12.jpg' alt='Car Image' />
-					<img class='carousel-car' src='/assets/img/13.jpg' alt='Car Image' />
-					<img class='carousel-car' src='/assets/img/14.jpg' alt='Car Image' />
-					<img class='carousel-car' src='/assets/img/15.jpg' alt='Car Image' />
+					<img class='carousel-car' src={masina} alt='Car Image' />
+					<img class='carousel-car' src={masina} alt='Car Image' />
+					<img class='carousel-car' src={masina} alt='Car Image' />
+					<img class='carousel-car' src={masina} alt='Car Image' />
+					<img class='carousel-car' src={masina} alt='Car Image' />
 				</div>
 			</div>
 
@@ -99,12 +100,12 @@ const index = () => {
 				<div class='content-car'>
 					<div class='car-item'>
 						<div class='car-item__img'>
-							<a href=''>
-								<img class='car-img' src='/assets/img/11.jpg' alt='' />
+							<a>
+								<img class='car-img' src={masina} alt='' />
 							</a>
 						</div>
 						<div class='car-item__content'>
-							<a href=''>
+							<a>
 								<span>Audi A3 Sportback TFSI Quattro</span>
 							</a>
 							<p class='car-item__register'>
@@ -131,7 +132,7 @@ const index = () => {
 							<div class='auction-entry-actions'>
 								<span class='auctions-observations'>ДОБАВИТЬ В НАБЛЮДЕНИЕ</span>
 								<span class='auction-action-make-offer'>
-									<a href=''>более</a>
+									<a>более</a>
 								</span>
 							</div>
 						</div>
@@ -139,12 +140,12 @@ const index = () => {
 
 					<div class='car-item'>
 						<div class='car-item__img'>
-							<a href=''>
-								<img class='car-img' src='/assets/img/12.jpg' alt='' />
+							<a>
+								<img class='car-img' src={masina} alt='' />
 							</a>
 						</div>
 						<div class='car-item__content'>
-							<a href=''>
+							<a>
 								<span>Audi A3 Sportback TFSI Quattro</span>
 							</a>
 							<p class='car-item__register'>
@@ -171,7 +172,7 @@ const index = () => {
 							<div class='auction-entry-actions'>
 								<span class='auctions-observations'>ДОБАВИТЬ В НАБЛЮДЕНИЕ</span>
 								<span class='auction-action-make-offer'>
-									<a href=''>более</a>
+									<a>более</a>
 								</span>
 							</div>
 						</div>
@@ -179,12 +180,12 @@ const index = () => {
 
 					<div class='car-item'>
 						<div class='car-item__img'>
-							<a href=''>
-								<img class='car-img' src='/assets/img/13.jpg' alt='' />
+							<a>
+								<img class='car-img' src={masina} alt='' />
 							</a>
 						</div>
 						<div class='car-item__content'>
-							<a href=''>
+							<a>
 								<span>Audi A3 Sportback TFSI Quattro</span>
 							</a>
 							<p class='car-item__register'>
@@ -211,7 +212,7 @@ const index = () => {
 							<div class='auction-entry-actions'>
 								<span class='auctions-observations'>ДОБАВИТЬ В НАБЛЮДЕНИЕ</span>
 								<span class='auction-action-make-offer'>
-									<a href=''>более</a>
+									<a>более</a>
 								</span>
 							</div>
 						</div>

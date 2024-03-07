@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom'
 import './styles.css'
 
 const index = () => {
@@ -6,27 +7,39 @@ const index = () => {
 			<nav className='nav'>
 				<ul className='navigation'>
 					<li>
-						<a href='Firma.html'>ПРО ФИРМУ</a>
+						<NavLink to='/info'>
+							<a>ПРО ФИРМУ</a>
+						</NavLink>
 					</li>
 					<li className='dropdown' id='dropdown-toggle'>
 						<button>КАК КУПИТЬ</button>
 						<ul className='dropdown-menu' id='dropdown-menu'>
 							<li>
-								<a href='Rules.html'>правила</a>
+								<NavLink to='/rules'>
+									<a>правила</a>
+								</NavLink>
 							</li>
 							<li>
-								<a href='FAQ.html'>Часто задаваемые вопросы</a>
+								<NavLink to='/faq'>
+									<a>Часто задаваемые вопросы</a>
+								</NavLink>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<a href='index.html'>АУКЦИОНЫ</a>
+						<NavLink to='/'>
+							<a>АУКЦИОНЫ</a>
+						</NavLink>
 					</li>
 					<li>
-						<a href='Contact.html'>КОНТАКТ </a>
+						<NavLink to='/contact'>
+							<a>КОНТАКТ </a>
+						</NavLink>
 					</li>
 					<li>
-						<a href='Login.html'>ВОЙТИ</a>
+						<NavLink to='/login'>
+							<a>ВОЙТИ</a>
+						</NavLink>
 					</li>
 				</ul>
 			</nav>
