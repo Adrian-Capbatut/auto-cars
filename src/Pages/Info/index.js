@@ -1,10 +1,11 @@
 import React from 'react'
+import FirmaImage from './../../Assets/Images/page-img.jpg'
 import './styles.css'
 
 const index = () => {
 	return (
 		<div class='container'>
-			<img class='img-compani' src='./assets/img/page-img.jpg' alt='' />
+			<img class='img-compani' src={FirmaImage} alt='' />
 			<h3 class='titlu-firma'>
 				ПРО ФИРМУ
 				<hr class='titlu-hr' />
@@ -12,7 +13,7 @@ const index = () => {
 			<div class='content-firma'>
 				<p>
 					Хочешь купить
-					<b class='content-firma__important'>ХОРОШИЙ АВТОМОБИЛЬ</b>, а не
+					<b class='content-firma__important'> ХОРОШИЙ АВТОМОБИЛЬ</b>, а не
 					большие хлопоты? Останься с нами - мы Тебе честно поможем и
 					посоветуем.
 				</p>
