@@ -9,6 +9,7 @@
 
 .dropdown button {
 	background-color: transparent;
+	cursor: pointer;
 	border: none;
 	color: #fff;
 	font-size: 14px;
@@ -22,6 +23,7 @@
 	position: absolute;
 	display: block;
 	background-color: #fbfbfb;
+	margin-top: 20px;
 	padding: 5px 10px;
 	text-align: center;
 	border: 1px solid #ccc;
@@ -101,6 +103,10 @@
 	.nav ul {
 		flex-direction: column;
 		row-gap: 30px;
+	}
+
+	.navigation.active {
+		display: flex;
 	}
 
 	.navigation {
