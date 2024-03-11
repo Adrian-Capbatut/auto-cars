@@ -12,14 +12,6 @@ const Index = () => {
 
 	const toggleBurger = () => {
 		setBurgerActive(!isBurgerActive)
-		setDropdownOpen(false)
-
-		const navigationElement = document.querySelector('.navigation')
-		if (isBurgerActive) {
-			navigationElement.classList.remove('active')
-		} else {
-			navigationElement.classList.add('active')
-		}
 	}
 
 	useEffect(() => {
@@ -39,7 +31,18 @@ const Index = () => {
 		return () => {
 			document.removeEventListener('click', handleOutsideClick)
 		}
-	}, [isDropdownOpen, isBurgerActive])
+	}, [isDropdownOpen])
+
+	useEffect(() => {
+		const navigationElement = document.querySelector('.navigation')
+		if (navigationElement) {
+			if (isBurgerActive) {
+				navigationElement.classList.add('active')
+			} else {
+				navigationElement.classList.remove('active')
+			}
+		}
+	}, [isBurgerActive])
 
 	return (
 		<>
