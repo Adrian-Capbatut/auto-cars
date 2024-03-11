@@ -2,6 +2,7 @@ import { Route, BrowserRouter as Router, Routes } from 'react-router-dom'
 import Footer from './Footer/index.js'
 import Header from './Header/index.js'
 
+import Auto from '../../Pages/Auto/index.js'
 import Contact from './../../Pages/Contact'
 import FAQ from './../../Pages/FAQ'
 import Info from './../../Pages/Info'
@@ -17,6 +18,7 @@ const Layout = ({ children }) => {
 
 				<Routes>
 					<Route path='/' element={<Auction />} />
+					<Route path='/auto' element={<Auto />} />
 					<Route path='/info' element={<Info />} />
 					<Route path='/contact' element={<Contact />} />
 					<Route path='/faq' element={<FAQ />} />

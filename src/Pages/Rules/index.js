@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import './styles.css'
 
 const index = () => {
@@ -12,8 +13,7 @@ const index = () => {
 					</span>
 					<ol>
 						<li>
-							Регистрация на сайте -
-							<a href='registration-link.html'>регистр!</a>
+							Регистрация на сайте - <NavLink to='/login'>регистр!</NavLink>
 						</li>
 						<li>
 							Подача предложения на данный автомобиль. Никто из участников не
@@ -40,8 +40,8 @@ const index = () => {
 
 					<p class='auction-link'>
 						Если есть вопросы, см. раздел
-						<a href='faq.html'>Часто задаваемые вопросы</a> или
-						<a href='contact.html'>Свяжитесь с нами</a>.
+						<NavLink to='/faq'>Часто задаваемые вопросы</NavLink> или
+						<NavLink to='/contact'>Свяжитесь с нами</NavLink>
 					</p>
 				</div>
 

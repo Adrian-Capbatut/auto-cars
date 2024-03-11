@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import masina from './../../Assets/Images/11.jpg'
 import './styles.css'
 
@@ -100,14 +101,14 @@ const index = () => {
 				<div class='content-car'>
 					<div class='car-item'>
 						<div class='car-item__img'>
-							<a>
+							<NavLink to='/auto'>
 								<img class='car-img' src={masina} alt='' />
-							</a>
+							</NavLink>
 						</div>
 						<div class='car-item__content'>
-							<a>
+							<NavLink to='/auto'>
 								<span>Audi A3 Sportback TFSI Quattro</span>
-							</a>
+							</NavLink>
 							<p class='car-item__register'>
 								1. регистрация: <span>3 wrzesnia 2014</span>
 							</p>
@@ -132,7 +133,7 @@ const index = () => {
 							<div class='auction-entry-actions'>
 								<span class='auctions-observations'>ДОБАВИТЬ В НАБЛЮДЕНИЕ</span>
 								<span class='auction-action-make-offer'>
-									<a>более</a>
+									<NavLink to='/auto'>более</NavLink>
 								</span>
 							</div>
 						</div>
@@ -140,14 +141,14 @@ const index = () => {
 
 					<div class='car-item'>
 						<div class='car-item__img'>
-							<a>
+							<NavLink to='/auto'>
 								<img class='car-img' src={masina} alt='' />
-							</a>
+							</NavLink>
 						</div>
 						<div class='car-item__content'>
-							<a>
+							<NavLink to='/auto'>
 								<span>Audi A3 Sportback TFSI Quattro</span>
-							</a>
+							</NavLink>
 							<p class='car-item__register'>
 								1. регистрация: <span>3 wrzesnia 2014</span>
 							</p>
@@ -172,7 +173,7 @@ const index = () => {
 							<div class='auction-entry-actions'>
 								<span class='auctions-observations'>ДОБАВИТЬ В НАБЛЮДЕНИЕ</span>
 								<span class='auction-action-make-offer'>
-									<a>более</a>
+									<NavLink to='/auto'>более</NavLink>
 								</span>
 							</div>
 						</div>
@@ -180,14 +181,14 @@ const index = () => {
 
 					<div class='car-item'>
 						<div class='car-item__img'>
-							<a>
+							<NavLink to='/auto'>
 								<img class='car-img' src={masina} alt='' />
-							</a>
+							</NavLink>
 						</div>
 						<div class='car-item__content'>
-							<a>
+							<NavLink to='/auto'>
 								<span>Audi A3 Sportback TFSI Quattro</span>
-							</a>
+							</NavLink>
 							<p class='car-item__register'>
 								1. регистрация: <span>3 wrzesnia 2014</span>
 							</p>
@@ -212,7 +213,7 @@ const index = () => {
 							<div class='auction-entry-actions'>
 								<span class='auctions-observations'>ДОБАВИТЬ В НАБЛЮДЕНИЕ</span>
 								<span class='auction-action-make-offer'>
-									<a>более</a>
+									<NavLink to='/auto'>более</NavLink>
 								</span>
 							</div>
 						</div>

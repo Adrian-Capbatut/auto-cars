@@ -26,3 +26,11 @@ html {
 	width: 100%;
 	margin: 0 auto;
 }
+
+.titlu-hr {
+	max-width: 40px;
+	color: #b10303;
+	border: 1px solid #b10303;
+	padding: 0;
+	margin: 6px auto;
+}
