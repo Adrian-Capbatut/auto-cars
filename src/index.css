@@ -27,6 +27,12 @@ html {
 	margin: 0 auto;
 }
 
+.layout {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
 .titlu-hr {
 	max-width: 40px;
 	color: #b10303;
