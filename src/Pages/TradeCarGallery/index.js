@@ -85,10 +85,6 @@ const index = () => {
 
 				<div class='carousel'>
 					<img class='carousel-car' src={masina} alt='Car Image' />
-					<img class='carousel-car' src={masina} alt='Car Image' />
-					<img class='carousel-car' src={masina} alt='Car Image' />
-					<img class='carousel-car' src={masina} alt='Car Image' />
-					<img class='carousel-car' src={masina} alt='Car Image' />
 				</div>
 			</div>
 
