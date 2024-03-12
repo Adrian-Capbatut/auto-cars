@@ -10,7 +10,7 @@ export default function index() {
 			<div className='container'>
 				<div className='header'>
 					<div className='logo'>
-						<NavLink>
+						<NavLink to='/'>
 							<img className='logo-img' src={logo} alt='Logo' />
 						</NavLink>
 					</div>
