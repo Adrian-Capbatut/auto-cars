@@ -26,44 +26,6 @@ const index = () => {
 				<div class='search-form'>
 					<form method='get'>
 						<div class='group-search'>
-							<label for='mileage'>Пробег</label>
-							<div class='input-group'>
-								<div class='input-group-addon'>од</div>
-								<input
-									type='number'
-									id='mileage-min'
-									name='mileage-min'
-									placeholder='0'
-								/>
-								<div class='input-group-addon'>до</div>
-								<input
-									type='number'
-									id='mileage-max'
-									name='mileage-max'
-									placeholder='200 000'
-								/>
-							</div>
-						</div>
-						<div class='group-search'>
-							<label for='year'>Год Продукции</label>
-							<div class='input-group'>
-								<div class='input-group-addon'>од</div>
-								<input
-									type='number'
-									id='year-min'
-									name='year-min'
-									placeholder='1900'
-								/>
-								<div class='input-group-addon'>до</div>
-								<input
-									type='number'
-									id='year-max'
-									name='year-max'
-									placeholder='2024'
-								/>
-							</div>
-						</div>
-						<div class='group-search'>
 							<label for='phrase'>Искать фразу</label>
 							<div class='input-group'>
 								<input
@@ -77,6 +39,53 @@ const index = () => {
 								</div>
 							</div>
 						</div>
+						<div class='group-search'>
+							<label for='mileage'>Пробег</label>
+							<div class='input-group'>
+								<div className='input-group__item'>
+									<div class='input-group-addon'>од</div>
+									<input
+										type='number'
+										id='mileage-min'
+										name='mileage-min'
+										placeholder='0'
+									/>
+								</div>
+								<div className='input-group__item'>
+									<div class='input-group-addon'>до</div>
+									<input
+										type='number'
+										id='mileage-max'
+										name='mileage-max'
+										placeholder='200 000'
+									/>
+								</div>
+							</div>
+						</div>
+						<div class='group-search'>
+							<label for='year'>Год Продукции</label>
+							<div class='input-group'>
+								<div className='input-group__item'>
+									<div class='input-group-addon'>од</div>
+									<input
+										type='number'
+										id='year-min'
+										name='year-min'
+										placeholder='1900'
+									/>
+								</div>
+								<div className='input-group__item'>
+									<div class='input-group-addon'>до</div>
+									<input
+										type='number'
+										id='year-max'
+										name='year-max'
+										placeholder='2024'
+									/>
+								</div>
+							</div>
+						</div>
+
 						<button class='search-btn' type='submit'>
 							Искать<span class='loop-btn'></span>
 						</button>
@@ -84,7 +93,7 @@ const index = () => {
 				</div>
 
 				<div class='carousel'>
-					<img class='carousel-car' src={masina} alt='Car Image' />
+					<div className='carousel-car'></div>
 				</div>
 			</div>
 
@@ -98,7 +107,7 @@ const index = () => {
 					<div class='car-item'>
 						<div class='car-item__img'>
 							<NavLink to='/auto'>
-								<img class='car-img' src={masina} alt='' />
+								<img class='car-img' src={masina} alt='car' />
 							</NavLink>
 						</div>
 						<div class='car-item__content'>
@@ -167,6 +176,7 @@ const index = () => {
 								</div>
 							</div>
 							<div class='auction-entry-actions'>
+								<div className='auction-entry__img'></div>
 								<span class='auctions-observations'>ДОБАВИТЬ В НАБЛЮДЕНИЕ</span>
 								<span class='auction-action-make-offer'>
 									<NavLink to='/auto'>более</NavLink>

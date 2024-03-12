@@ -1,29 +1,43 @@
 .search-and-carousel {
-	padding-top: 30px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	max-width: 1000px;
-	margin: 0 auto;
-	gap: 40px;
+	margin: 40px auto 10px;
+	height: 420px;
+	position: relative;
 }
 
 .search-form form {
 	display: flex;
 	flex-direction: column;
-	gap: 15px;
+	gap: 25px;
 	max-width: 420px;
+	position: absolute;
+	left: 50px;
+	top: 50%;
+	z-index: 1;
+	transform: translateY(-50%);
 }
 
 .group-search {
 	display: flex;
 	flex-direction: column;
-	gap: 5px;
+	gap: 8px;
 }
 
 .group-search label {
 	font-size: 16px;
 	font-weight: bold;
+	color: #fff;
+}
+
+.group-search input {
+	border-radius: 6px 0 0 6px;
+}
+
+.group-search .input-group-addon {
+	border-radius: 0 6px 6px 0;
+}
+
+.input-group__item .input-group-addon {
+	border-radius: 6px 0 0 6px;
 }
 
 .input-group {
@@ -31,21 +45,31 @@
 	flex-direction: row;
 }
 
+.input-group__item {
+	display: flex;
+}
+
+.input-group__item + .input-group__item {
+	margin-left: 20px;
+}
+
+.input-group__item input {
+	border-radius: 0 8px 8px 0;
+}
+
 .input-group-addon {
-	padding: 6px 12px;
-	font-size: 14px;
-	font-weight: 400;
-	line-height: 1;
+	display: flex;
+	align-items: center;
 	color: #555;
-	text-align: center;
 	background-color: #eee;
 	border: 1px solid #ccc;
+	padding: 8px 16px;
 }
 
 .input-group input {
 	border: 1px solid #ccc;
 	width: 100%;
-	padding: 3px 10px;
+	padding: 10px 10px;
 }
 
 .input-group input:focus {
@@ -112,14 +136,26 @@
 	transform: translate(0%, -50%);
 }
 
-.carousel-car {
-	width: 500px;
-	height: 300px;
+/* De verificat */
+.carousel {
+	max-height: 100%;
+	position: absolute;
+	bottom: 0px;
+	right: 0;
+	transform: translateX(-0%);
+	z-index: 0;
 	object-fit: cover;
 }
 
-.carousel-car:not(:first-child) {
-	display: none;
+.carousel {
+	background-image: linear-gradient(to right, #282828 50%, transparent 100%),
+		url('./../../Assets/Images/15.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%, fill;
+	background-position: right;
+	height: 420px;
+	max-width: 1200px;
+	width: 100%;
 }
 
 .content-cars {
@@ -165,7 +201,7 @@
 .car-item__content a {
 	font-size: 18px;
 	color: #282828;
-	padding-bottom: 35px;
+	margin-bottom: 35px;
 }
 
 .car-item__content p > span {
@@ -203,7 +239,6 @@
 .auction-entry-actions {
 	margin-left: 30px;
 	font-size: 12px;
-	/* padding: 0 0 0 4px; */
 	padding: 0 0 0 4px;
 	background-color: #fff;
 	border: 1px solid #ccc;
@@ -211,6 +246,19 @@
 	align-items: center;
 	gap: 10px;
 	z-index: 0;
+	position: relative;
+}
+
+.auction-entry__img {
+	background-image: url(./../../Assets/Images/car-img.png);
+	background-repeat: no-repeat;
+	object-fit: cover;
+	height: 39px;
+	width: 61px;
+	position: absolute;
+	object-fit: cover;
+	left: -65px;
+	bottom: -20px;
 }
 
 .auction-action-make-offer {
@@ -235,4 +283,41 @@
 
 .auction-action-make-offer a:hover {
 	text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+	.search-form form {
+		left: 20px;
+		right: 20px;
+	}
+
+	.input-group__item + .input-group__item {
+		margin-left: 10px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.search-and-carousel {
+		margin: -10px auto 10px;
+	}
+	.search-form form {
+		left: 7px;
+		right: 7px;
+		top: 55%;
+	}
+
+	.input-group__item .input-group-addon {
+		padding: 8px;
+	}
+
+	.input-group input {
+		padding: 10px 5px;
+	}
+
+	.carousel {
+		background-image: linear-gradient(to right, #282828 100%, transparent 100%),
+			url('./../../Assets/Images/15.jpg');
+		border-radius: 10px;
+		height: 380px;
+	}
 }
