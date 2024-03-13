@@ -1,7 +1,14 @@
+.info-img {
+	display: flex;
+	justify-content: center;
+	margin: 40px 10px;
+}
+
 .img-compani {
-	margin-top: 40px;
-	height: 229px;
+	height: auto;
+	max-width: 1000px;
 	width: 100%;
+	object-fit: cover;
 }
 
 .titlu-firma {
@@ -13,15 +20,15 @@
 }
 
 .content-firma {
-	margin-top: 30px;
-	max-width: 800px;
+	max-width: 900px;
 	margin: 0 auto;
-	font-size: 13px;
+	letter-spacing: 0.7px;
 	color: #282828;
+	padding-bottom: 35px;
 }
 
 .content-firma p {
-	padding: 10px 50px 15px 40px;
+	padding: 5px 50px 5px 40px;
 }
 
 .content-firma__important {
@@ -29,5 +36,29 @@
 	padding-bottom: 0;
 	margin-bottom: 0;
 	font-weight: bold;
-	font-size: 13px;
+}
+
+@media screen and (max-width: 700px) {
+	.info-img {
+		margin: 20px 5px;
+	}
+
+	.img-compani {
+		height: 200px;
+	}
+
+	.content-firma p {
+		padding: 5px 20px;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.content-firma {
+		letter-spacing: normal;
+		padding-bottom: 20px;
+	}
+
+	.content-firma p {
+		padding: 5px;
+	}
 }

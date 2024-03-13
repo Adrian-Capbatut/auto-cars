@@ -5,7 +5,9 @@ import './styles.css'
 const index = () => {
 	return (
 		<div class='container'>
-			<img class='img-compani' src={FirmaImage} alt='' />
+			<div className='info-img'>
+				<img class='img-compani' src={FirmaImage} alt='Track-img' />
+			</div>
 			<h3 class='titlu-firma'>
 				ПРО ФИРМУ
 				<hr class='titlu-hr' />
