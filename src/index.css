@@ -33,6 +33,14 @@ html {
 	min-height: 100vh;
 }
 
+.titlu-user {
+	padding: 26px 0 20px;
+	font-size: 17px;
+	text-transform: uppercase;
+	text-align: center;
+	line-height: 18px;
+}
+
 .titlu-hr {
 	max-width: 40px;
 	color: #b10303;
