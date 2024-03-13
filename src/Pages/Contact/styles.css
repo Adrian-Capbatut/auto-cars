@@ -180,6 +180,7 @@ a:hover {
 	justify-content: center;
 	cursor: pointer;
 	transition: ease-in-out 0.4s;
+	color: #000;
 }
 
 .contact-btn:hover {
