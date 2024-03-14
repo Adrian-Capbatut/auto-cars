@@ -144,7 +144,7 @@ const index = () => {
 						</div>
 					</div>
 
-					<div class='car-item'>
+					{/* <div class='car-item'>
 						<div class='car-item__img'>
 							<NavLink to='/auto'>
 								<img class='car-img' src={masina} alt='' />
@@ -223,7 +223,7 @@ const index = () => {
 								</span>
 							</div>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div>
