@@ -236,14 +236,14 @@
 }
 
 .auction-entry-actions {
-	margin-left: 30px;
+	margin-left: 35px;
 	font-size: 12px;
-	padding: 0 0 0 4px;
+	padding: 0 0 0 2px;
 	background-color: #fff;
 	border: 1px solid #ccc;
 	display: flex;
 	align-items: center;
-	gap: 10px;
+	gap: 7px;
 	z-index: 0;
 	position: relative;
 }
@@ -269,9 +269,9 @@
 
 .auction-action-make-offer a {
 	bottom: -1px;
-	right: -8px;
+	right: -7px;
 	position: absolute;
-	padding: 3px 5px;
+	padding: 5px 5px;
 	border-radius: 8px;
 	background-color: #ac0303;
 	font-weight: 700;

@@ -1,7 +1,6 @@
 .content-rules {
 	max-width: 1000px;
-	margin: 0 auto;
-	padding-top: 20px;
+	margin: 40px auto;
 	color: #282828;
 	font-size: 16px;
 	line-height: 17.6px;
@@ -27,12 +26,9 @@
 .rules-items ol {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap;
 	gap: 7px;
-}
-
-.rules-items ol {
-	padding-top: 47px;
-	margin-left: 25px;
+	margin: 30px 0 0 25px;
 }
 
 .rules-items a {
@@ -50,6 +46,10 @@
 	margin-left: 40px;
 }
 
+.auction-link a {
+	margin-left: 5px;
+}
+
 .rules-ads {
 	font-size: 18px;
 }
@@ -65,6 +65,7 @@
 }
 .rules-price {
 	font-size: 15px;
+	list-style-type: none;
 }
 
 .rules-price p {
@@ -76,4 +77,48 @@
 	display: flex;
 	flex-direction: column;
 	gap: 6px;
+}
+
+.rules-price ul > li {
+	text-indent: -5px;
+	margin-left: 6px;
+}
+
+.rules-price ul > li::before {
+	content: '-';
+	margin-right: 5px;
+	margin-left: -5px;
+	text-indent: 5px;
+}
+
+@media screen and (max-width: 600px) {
+	.title-item {
+		font-size: 15px;
+	}
+
+	.rules-items ol {
+		margin: 20px 0 0 20px;
+	}
+
+	.rules-ads {
+		font-size: 16px;
+	}
+
+	.rules-ads p {
+		margin: 10px 0 30px 20px;
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	.auction-link {
+		padding: 20px 0 25px;
+	}
+
+	.rules-price p {
+		margin: 20px 0 20px 20px;
+	}
+
+	.rules-price ul {
+		margin-left: 30px;
+	}
 }

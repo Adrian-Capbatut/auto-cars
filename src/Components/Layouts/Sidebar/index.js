@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { NavLink, useLocation } from 'react-router-dom'
 import './styles.css'
 
-const Index = () => {
+const Sidebar = () => {
 	const [isDropdownOpen, setDropdownOpen] = useState(false)
 	const [isBurgerActive, setBurgerActive] = useState(false)
 	const location = useLocation()
@@ -46,7 +46,6 @@ const Index = () => {
 	}, [isBurgerActive])
 
 	useEffect(() => {
-		// Ascunde meniul când utilizatorul navighează la o altă pagină
 		setBurgerActive(false)
 		setDropdownOpen(false)
 	}, [location.pathname])
@@ -97,4 +96,4 @@ const Index = () => {
 	)
 }
 
-export default Index
+export default Sidebar
