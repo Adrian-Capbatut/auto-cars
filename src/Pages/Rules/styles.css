@@ -88,10 +88,12 @@
 	content: '-';
 	margin-right: 5px;
 	margin-left: -5px;
-	text-indent: 5px;
 }
 
 @media screen and (max-width: 600px) {
+	.content-rules {
+		text-align: inherit;
+	}
 	.title-item {
 		font-size: 15px;
 	}
