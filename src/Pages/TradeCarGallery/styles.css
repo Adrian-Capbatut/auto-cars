@@ -314,6 +314,39 @@
 	.input-group__item + .input-group__item {
 		margin-left: 10px;
 	}
+
+	.car-item__content {
+		padding: 20px 0 0;
+	}
+
+	.car-item__content a {
+		font-size: 16px;
+		margin-bottom: 0;
+	}
+	.auction-time {
+		font-size: 12px;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.car-item {
+		gap: 0px;
+		grid-column-gap: 10px;
+	}
+
+	.car-item__content {
+		padding: 10px 0 0;
+	}
+
+	.finis-auction,
+	.time-auction {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.time-auction {
+		margin-top: 6px;
+	}
 }
 
 @media screen and (max-width: 400px) {
@@ -339,5 +372,19 @@
 			url('./../../Assets/Images/15.jpg');
 		border-radius: 10px;
 		height: 380px;
+	}
+
+	.car-item {
+		height: 140px;
+	}
+
+	.car-img {
+		width: 150px;
+		height: 140px;
+		object-fit: fill;
+	}
+
+	.car-item__content {
+		padding: 10px 0;
 	}
 }
