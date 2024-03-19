@@ -329,9 +329,8 @@
 }
 
 @media screen and (max-width: 500px) {
-	.car-item {
-		gap: 0px;
-		grid-column-gap: 10px;
+	.car-img {
+		margin-right: 10px;
 	}
 
 	.car-item__content {
