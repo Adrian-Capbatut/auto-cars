@@ -34,7 +34,6 @@
 
 .faq-details summary::marker {
 	font-size: 25px;
-	list-style-type: '+';
 	content: '+';
 	font-weight: bolder;
 	color: #ac0303;

@@ -15,39 +15,25 @@ const Sidebar = () => {
 		setBurgerActive(!isBurgerActive)
 	}
 
+	const closeMenu = () => {
+		setDropdownOpen(false)
+		setBurgerActive(false)
+	}
+
 	useEffect(() => {
-		const handleOutsideClick = event => {
-			if (
-				isDropdownOpen &&
-				!event.target.closest('.dropdown') &&
-				!event.target.closest('.burger')
-			) {
-				setDropdownOpen(false)
-				setBurgerActive(false)
-			}
+		const handlePageChange = () => {
+			closeMenu()
 		}
 
-		document.addEventListener('click', handleOutsideClick)
+		window.addEventListener('hashchange', handlePageChange)
 
 		return () => {
-			document.removeEventListener('click', handleOutsideClick)
+			window.removeEventListener('hashchange', handlePageChange)
 		}
-	}, [isDropdownOpen])
+	}, [])
 
 	useEffect(() => {
-		const navigationElement = document.querySelector('.navigation')
-		if (navigationElement) {
-			if (isBurgerActive) {
-				navigationElement.classList.add('active')
-			} else {
-				navigationElement.classList.remove('active')
-			}
-		}
-	}, [isBurgerActive])
-
-	useEffect(() => {
-		setBurgerActive(false)
-		setDropdownOpen(false)
+		closeMenu()
 	}, [location.pathname])
 
 	return (
@@ -55,7 +41,9 @@ const Sidebar = () => {
 			<nav className='nav'>
 				<ul className={`navigation ${isBurgerActive ? 'active' : ''}`}>
 					<li>
-						<NavLink to='/info'>ПРО ФИРМУ</NavLink>
+						<NavLink to='/info' onClick={closeMenu}>
+							ПРО ФИРМУ
+						</NavLink>
 					</li>
 					<li
 						className={`dropdown ${isDropdownOpen ? 'open' : ''}`}
@@ -67,21 +55,31 @@ const Sidebar = () => {
 							id='dropdown-menu'
 						>
 							<li>
-								<NavLink to='/rules'>правила</NavLink>
+								<NavLink to='/rules' onClick={closeMenu}>
+									правила
+								</NavLink>
 							</li>
 							<li>
-								<NavLink to='/faq'>Часто задаваемые вопросы</NavLink>
+								<NavLink to='/faq' onClick={closeMenu}>
+									Часто задаваемые вопросы
+								</NavLink>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<NavLink to='/'>АУКЦИОНЫ</NavLink>
+						<NavLink to='/' onClick={closeMenu}>
+							АУКЦИОНЫ
+						</NavLink>
 					</li>
 					<li>
-						<NavLink to='/contact'>КОНТАКТ</NavLink>
+						<NavLink to='/contact' onClick={closeMenu}>
+							КОНТАКТ
+						</NavLink>
 					</li>
 					<li>
-						<NavLink to='/login'>ВОЙТИ</NavLink>
+						<NavLink to='/login' onClick={closeMenu}>
+							ВОЙТИ
+						</NavLink>
 					</li>
 				</ul>
 			</nav>
